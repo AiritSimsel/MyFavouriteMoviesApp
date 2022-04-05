@@ -3,6 +3,7 @@ import PageHeading from "./PageHeading";
 import List from "./List";
 import Footer from "./Footer";
 import movies from "../movies";
+import Timer from "./Timer";
 
 
 export default function App() {
@@ -22,7 +23,8 @@ export default function App() {
   return (
     <>
       <PageHeading title="My favourite movies" />
-      {movies.map(createList)}
+      <Timer />
+      {movies.map(createList)}      
       <Footer />
     </>
   );
